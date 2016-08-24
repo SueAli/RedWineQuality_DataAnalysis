@@ -82,7 +82,6 @@ Description: found in small quantities, citric acid can add 'freshness' and
 flavor to wines
 ```{r echo=FALSE, message=FALSE, warning=FALSE}
 # creating two graphs
-#####
 cc1<- ggplot(aes(x=citric.acid), data = redwine)+
   geom_histogram(binwidth = 0.05)+ 
   labs(title="Citirc.Acid Histogram") + 
