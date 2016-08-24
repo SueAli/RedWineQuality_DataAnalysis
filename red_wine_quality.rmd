@@ -87,7 +87,8 @@ cc1<- ggplot(aes(x=citric.acid), data = redwine)+
   labs(title="Citirc.Acid Histogram") + 
   ylab("Count")+xlab("Citric.Acid Amount(g/dm3)")
 
-cc2<- ggplot(aes(x=citric.acid,y=..count../sum(..count..)), data = redwine)+geom_histogram(binwidth = 0.05)+ 
+cc2<- ggplot(aes(x=citric.acid,y=..count../sum(..count..)), data = redwine)+
+  geom_histogram(binwidth = 0.05)+ 
   labs(title="Citirc.Acid Percentile") + 
   ylab("Percentile")+
   xlab("Citric.Acid Amount(g/dm3)")
